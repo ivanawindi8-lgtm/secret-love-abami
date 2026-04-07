@@ -905,14 +905,6 @@
              The puzzle will automatically slice the image into 9 pieces (3×3 grid).
              ====================================================== -->
 
-        <div class="photo-instructions">
-          <strong>📸 Cara menambah foto:</strong><br />
-          Buka file ini, cari variabel <code>PUZZLE_IMAGE_URL</code> di bagian JavaScript,
-          lalu ganti nilainya dengan URL foto kamu (bisa URL langsung dari internet atau
-          nama file yang sudah kamu simpan di folder yang sama). Gunakan foto persegi
-          agar hasilnya sempurna ya! 🐱
-        </div>
-
         <div class="puzzle-stats">
           <span>Gerakan: <strong id="moveCount">0</strong></span>
           <button class="btn btn-reset" onclick="initPuzzle()">🔄 Acak Ulang</button>
@@ -1115,7 +1107,7 @@
        The image should be square for best results.
        Recommended size: at least 420×420 pixels.
        ============================================================ */
-    const PUZZLE_IMAGE_URL = 'https://pin.it/33ybA0ou3';
+    const PUZZLE_IMAGE_URL = 'https://id.pinterest.com/pin/741053313739551838#imgViewer';
     //  ^ CHANGE THIS LINE to use your own photo ^
     //  Example: const PUZZLE_IMAGE_URL = './my-photo.jpg';
     //  Example: const PUZZLE_IMAGE_URL = 'https://i.imgur.com/XXXXXXX.jpg';
@@ -1185,7 +1177,7 @@
           const origCol = origPos % GRID_SIZE;
 
           const bgSize = PIECE_SIZE * GRID_SIZE;
-          piece.style.backgroundImage = `url('${PUZZLE_IMAGE_URL}')`;
+          piece.style.backgroundImage = `url('${https://id.pinterest.com/pin/741053313739551838#imgViewer}')`;
           piece.style.backgroundSize = `${bgSize}px ${bgSize}px`;
           piece.style.backgroundPosition = `-${origCol * PIECE_SIZE}px -${origRow * PIECE_SIZE}px`;
         }
