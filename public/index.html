@@ -786,18 +786,18 @@
 
       <!-- Numpad -->
       <div class="numpad">
-        <button class="num-btn" onclick="pressNum('1')">1</button>
-        <button class="num-btn" onclick="pressNum('2')">2</button>
-        <button class="num-btn" onclick="pressNum('3')">3</button>
-        <button class="num-btn" onclick="pressNum('4')">4</button>
-        <button class="num-btn" onclick="pressNum('5')">5</button>
-        <button class="num-btn" onclick="pressNum('6')">6</button>
-        <button class="num-btn" onclick="pressNum('7')">7</button>
-        <button class="num-btn" onclick="pressNum('8')">8</button>
-        <button class="num-btn" onclick="pressNum('9')">9</button>
-        <button class="num-btn delete" onclick="deleteNum()">⌫</button>
-        <button class="num-btn zero" onclick="pressNum('0')">0</button>
-        <button class="num-btn" onclick="submitPin()">✓</button>
+        <button class="num-btn" data-num="1">1</button>
+        <button class="num-btn" data-num="2">2</button>
+        <button class="num-btn" data-num="3">3</button>
+        <button class="num-btn" data-num="4">4</button>
+        <button class="num-btn" data-num="5">5</button>
+        <button class="num-btn" data-num="6">6</button>
+        <button class="num-btn" data-num="7">7</button>
+        <button class="num-btn" data-num="8">8</button>
+        <button class="num-btn" data-num="9">9</button>
+        <button class="num-btn delete" data-action="delete">⌫</button>
+        <button class="num-btn zero" data-num="0">0</button>
+        <button class="num-btn" data-action="submit">✓</button>
       </div>
 
       <p class="error-msg" id="errorMsg">Kode salah, coba lagi sayang~ 🐾</p>
@@ -844,7 +844,7 @@
         <div class="yt-container">
           <iframe
             id="ytPlayer"
-            src="https://www.youtube.com/embed/XvWJzlR8paUJH0Be?enablejsapi=1&rel=0&modestbranding=1"
+            src="https://www.youtube.com/embed/lY5V4hSLWY8?enablejsapi=1&rel=0&modestbranding=1"
             title="Risk It All - Bruno Mars"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
@@ -904,7 +904,7 @@
 
              The puzzle will automatically slice the image into 9 pieces (3×3 grid).
              ====================================================== -->
-
+        
         <div class="photo-instructions">
           <strong>📸 Cara menambah foto:</strong><br />
           Buka file ini, cari variabel <code>PUZZLE_IMAGE_URL</code> di bagian JavaScript,
@@ -1115,7 +1115,7 @@
        The image should be square for best results.
        Recommended size: at least 420×420 pixels.
        ============================================================ */
-    const PUZZLE_IMAGE_URL = 'https://placecats.com/420/420';
+    const PUZZLE_IMAGE_URL = 'https://i.ibb.co.com/Qj1mQzBB/IMG-20251120-211950-edit-1731671193213890.jpg';
     //  ^ CHANGE THIS LINE to use your own photo ^
     //  Example: const PUZZLE_IMAGE_URL = './my-photo.jpg';
     //  Example: const PUZZLE_IMAGE_URL = 'https://i.imgur.com/XXXXXXX.jpg';
@@ -1185,7 +1185,7 @@
           const origCol = origPos % GRID_SIZE;
 
           const bgSize = PIECE_SIZE * GRID_SIZE;
-          piece.style.backgroundImage = `url('${PUZZLE_IMAGE_URL}')`;
+          piece.style.backgroundImage = `url('${https://i.ibb.co.com/Qj1mQzBB/IMG-20251120-211950-edit-1731671193213890.jpg}')`;
           piece.style.backgroundSize = `${bgSize}px ${bgSize}px`;
           piece.style.backgroundPosition = `-${origCol * PIECE_SIZE}px -${origRow * PIECE_SIZE}px`;
         }
