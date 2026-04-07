@@ -786,18 +786,18 @@
 
       <!-- Numpad -->
       <div class="numpad">
-        <button class="num-btn" onclick="pressNum('1')">1</button>
-        <button class="num-btn" onclick="pressNum('2')">2</button>
-        <button class="num-btn" onclick="pressNum('3')">3</button>
-        <button class="num-btn" onclick="pressNum('4')">4</button>
-        <button class="num-btn" onclick="pressNum('5')">5</button>
-        <button class="num-btn" onclick="pressNum('6')">6</button>
-        <button class="num-btn" onclick="pressNum('7')">7</button>
-        <button class="num-btn" onclick="pressNum('8')">8</button>
-        <button class="num-btn" onclick="pressNum('9')">9</button>
-        <button class="num-btn delete" onclick="deleteNum()">⌫</button>
-        <button class="num-btn zero" onclick="pressNum('0')">0</button>
-        <button class="num-btn" onclick="submitPin()">✓</button>
+        <button class="num-btn" data-num="1">1</button>
+        <button class="num-btn" data-num="2">2</button>
+        <button class="num-btn" data-num="3">3</button>
+        <button class="num-btn" data-num="4">4</button>
+        <button class="num-btn" data-num="5">5</button>
+        <button class="num-btn" data-num="6">6</button>
+        <button class="num-btn" data-num="7">7</button>
+        <button class="num-btn" data-num="8">8</button>
+        <button class="num-btn" data-num="9">9</button>
+        <button class="num-btn delete" data-action="delete">⌫</button>
+        <button class="num-btn zero" data-num="0">0</button>
+        <button class="num-btn" data-action="submit">✓</button>
       </div>
 
       <p class="error-msg" id="errorMsg">Kode salah, coba lagi sayang~ 🐾</p>
